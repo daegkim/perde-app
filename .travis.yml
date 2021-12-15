@@ -14,6 +14,7 @@ script:
 
 deploy:
   provider: "elasticbeanstalk"
+  edge: true  
   region: ap-northeast-2
   app: "perde-app"
   env: "Perdeapp-env"
