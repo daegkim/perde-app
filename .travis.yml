@@ -7,7 +7,7 @@ services:
 
 before_install:
   - echo "start Creating an image with dockerfile"
-  - docker build -t perde-app .
+  - docker build -t perde-app -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true perde-app npm run test -- --coverage
